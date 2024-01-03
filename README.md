@@ -1,0 +1,1 @@
+# mintconditiondetails.com
