@@ -83,7 +83,7 @@ export default async function HomePage() {
           })}
       </section>
 
-      <div className="mx-auto mb-20 flex max-w-screen-2xl justify-center px-4 py-0 text-2xl">
+      <div className="mx-auto mb-20 flex max-w-screen-2xl justify-center px-4 py-0 ">
         <a
           href="/services"
           className="rounded-lg border border-gray-800 bg-emerald-300/80 px-6 py-4 text-xl text-gray-800 transition-all ease-in-out hover:bg-emerald-400 focus:bg-emerald-400 focus:outline-none focus:ring focus:ring-emerald-400 active:bg-emerald-500"
@@ -97,7 +97,7 @@ export default async function HomePage() {
       </h4>
       <ThreeItemGrid />
 
-      <div className="mx-auto mb-20 flex max-w-screen-2xl justify-center px-4 pt-10 text-2xl">
+      <div className="mx-auto mb-20 flex max-w-screen-2xl justify-center px-4 pt-10 ">
         <a
           href="/search"
           className="rounded-lg border border-gray-800 bg-emerald-300/80 px-6 py-4 text-xl text-gray-800 transition-all ease-in-out hover:bg-emerald-400 focus:bg-emerald-400 focus:outline-none focus:ring focus:ring-emerald-400 active:bg-emerald-500"
