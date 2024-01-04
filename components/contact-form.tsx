@@ -6,8 +6,8 @@ export default function ContactForm() {
   const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID as string);
 
   return (
-    <form onSubmit={handleSubmit} method="POST" className="px-6 pb-24 sm:pb-40 lg:px-8">
-      <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+    <form onSubmit={handleSubmit} method="POST" className="w-full md:w-1/2">
+      <div className="w-full">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label
