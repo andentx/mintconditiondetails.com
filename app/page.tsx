@@ -41,7 +41,9 @@ export default async function HomePage() {
   return (
     <>
       <LandingHero />
-      <h4 className="mx-auto mb-6 max-w-screen-2xl px-4 text-2xl lg:text-4xl">Our Services</h4>
+      <h4 className="mx-auto mb-6 max-w-screen-2xl px-4 text-4xl font-bold tracking-tight text-gray-800">
+        Our Services
+      </h4>
       <section className="mx-auto mb-10 grid max-w-screen-2xl grid-cols-1 gap-4 px-4 pb-4 md:grid-cols-2 lg:grid-cols-3">
         {homePageServices
           .sort((a, b) => a.index - b.index) // Sort the array by index
@@ -90,7 +92,9 @@ export default async function HomePage() {
         </a>
       </div>
 
-      <h4 className="mx-auto mb-6 max-w-screen-2xl px-4 text-2xl lg:text-4xl">Online Store</h4>
+      <h4 className="mx-auto mb-6 max-w-screen-2xl px-4 text-4xl font-bold tracking-tight text-gray-800">
+        Online Store
+      </h4>
       <ThreeItemGrid />
 
       <div className="mx-auto mb-20 flex max-w-screen-2xl justify-center px-4 pt-10 text-2xl">
@@ -102,7 +106,9 @@ export default async function HomePage() {
         </a>
       </div>
 
-      <h4 className="mx-auto mb-6 max-w-screen-2xl px-4 text-2xl lg:text-4xl">Contact</h4>
+      <h4 className="mx-auto mb-6 max-w-screen-2xl px-4 text-4xl font-bold tracking-tight text-gray-800 md:mb-4">
+        Contact
+      </h4>
       <div className="mx-auto mb-20 flex w-full max-w-screen-2xl justify-center px-4">
         <ContactSection />
       </div>
