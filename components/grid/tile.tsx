@@ -22,9 +22,7 @@ export function GridTileImage({
       className={clsx(
         'group flex h-full w-full items-center justify-center overflow-hidden rounded-lg border border-gray-800 bg-emerald-300',
         {
-          relative: label,
-          'border-2 border-emerald-300': active,
-          'border-neutral-200': !active
+          relative: label
         }
       )}
     >
