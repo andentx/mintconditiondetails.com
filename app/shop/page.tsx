@@ -6,11 +6,11 @@ import { getProducts } from 'lib/shopify';
 export const runtime = 'edge';
 
 export const metadata = {
-  title: 'Search',
-  description: 'Search for products in the store.'
+  title: 'Shop',
+  description: 'Shop for products in the store.'
 };
 
-export default async function SearchPage({
+export default async function ShopPage({
   searchParams
 }: {
   searchParams?: { [key: string]: string | string[] | undefined };
