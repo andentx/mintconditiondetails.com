@@ -31,10 +31,10 @@ export default function LandingHero() {
             View Services
           </a>
           <a
-            href="/appointment"
+            href="/shop"
             className="inline-block rounded-md border border-gray-800 bg-emerald-300/80 px-8 py-3 text-base font-medium text-gray-800 shadow backdrop-blur-sm transition-colors ease-in-out hover:bg-emerald-400 focus:bg-emerald-400 focus:outline-none focus:ring-4 focus:ring-emerald-400"
           >
-            Book an Appointment
+            View Store
           </a>
         </div>
       </div>
