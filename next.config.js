@@ -20,7 +20,7 @@ module.exports = {
       {
         protocol: 'https',
         hostname: 'cdn.sanity.io',
-        pathname: '/images/q39qnwf9/**'
+        pathname: '/images/dhfcjjex/**'
       }
     ]
   },
