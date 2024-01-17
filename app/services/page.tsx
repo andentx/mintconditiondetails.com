@@ -10,6 +10,8 @@ type ServicesMenuSection = {
 
 export const runtime = 'edge';
 
+export const dynamic = 'force-dynamic';
+
 export const metadata = {
   title: 'Services',
   description: 'View all services.'
