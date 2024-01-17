@@ -1,3 +1,4 @@
+import { MenuSection } from 'components/services/services-menu-section';
 import { client } from '../../lib/sanity/sanity-client';
 
 type ServicesMenuSection = {
@@ -33,12 +34,7 @@ export default async function ServicesPage() {
 
       <section className="mx-auto mb-10 grid max-w-screen-2xl grid-cols-1 gap-4 px-4 pb-4 md:grid-cols-2 lg:grid-cols-3">
         {servicesMenuSection.map((service, index) => {
-          return (
-            <div key={index} className="bg-red-200">
-              {service.title}
-              {service.subtitle}
-            </div>
-          );
+          return <MenuSection key={index} title={service.title} subtitle={service.subtitle} />;
         })}
       </section>
     </>
