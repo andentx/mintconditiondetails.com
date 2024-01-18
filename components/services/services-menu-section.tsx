@@ -1,7 +1,23 @@
-export function MenuSection({ title, subtitle }: { title: string; subtitle: string }) {
+type MenuSectionProps = {
+  title: string;
+  subtitle: string;
+  menuItems: MenuItem[];
+};
+
+type MenuItem = {
+  title: string;
+  id: string;
+  description: { children: Array<{ text: string }> }[];
+  descriptionBulleted: { children: Array<{ text: string }> }[];
+  price: string;
+};
+
+export function MenuSection({ title, subtitle, menuItems }: MenuSectionProps) {
   const sectionTitle = title;
   const sectionSubtitle = subtitle;
+  const items = menuItems;
 
+  console.log(items);
   return (
     <>
       <div className="bg-blue-200">
@@ -11,6 +27,23 @@ export function MenuSection({ title, subtitle }: { title: string; subtitle: stri
               {sectionTitle}
             </h2>
             <p className="mt-4 text-gray-500">{sectionSubtitle}</p>
+
+            {/* <dl className="grid grid-cols-1 mt-16 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+              {items.map((feature) => {
+                return (
+                  <div
+                    key={feature.id}
+                    className="flex flex-col pt-4 border-t-2 border-gray-200 border-solid "
+                  >
+                    <dt className="font-medium text-gray-900">{feature.title}</dt>
+
+                    <dd className="mt-2 text-sm text-gray-900 font-montserratBold">
+                      {feature.price}
+                    </dd>
+                  </div>
+                );
+              })}
+            </dl> */}
           </div>
         </div>
       </div>
