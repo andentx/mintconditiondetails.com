@@ -11,7 +11,6 @@ type MenuItem = {
   title: string;
   id: string;
   description: { children: Array<{ text: string }> }[];
-  descriptionBulleted: { children: Array<{ text: string }> }[];
   price: string;
 };
 
@@ -25,26 +24,6 @@ export const metadata = {
 };
 
 export default async function ServicesPage() {
-  // const query = `*[_type == "servicesMenuSection"]{
-  //     title,
-  //     subtitle,
-  //     menuItems[]{
-  //         title,
-  //         id,
-  //         description[]{
-  //             children[]{
-  //                 text
-  //             }
-  //         },
-  //         descriptionBulleted[]{
-  //             children[]{
-  //                 text
-  //             }
-  //         },
-  //         price
-  //     }
-  // }`;
-
   const query = `*[_type == "servicesMenuSection"]{
     title,
     subtitle,
@@ -52,11 +31,6 @@ export default async function ServicesPage() {
       title,
       id,
       description[]{
-        children[]{
-          text
-        }
-      },
-      descriptionBulleted[]{
         children[]{
           text
         }
