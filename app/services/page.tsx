@@ -9,7 +9,7 @@ type ServicesMenuSection = {
 
 type MenuItem = {
   title: string;
-  id: string;
+  index: string;
   description: { children: Array<{ text: string }> }[];
   price: string;
 };
@@ -29,7 +29,7 @@ export default async function ServicesPage() {
     subtitle,
     "menuItems": menuItems[]->{
       title,
-      id,
+      index,
       description[]{
         children[]{
           text
