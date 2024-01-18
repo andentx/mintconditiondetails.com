@@ -2,10 +2,17 @@ import { MenuSection } from 'components/services/services-menu-section';
 import { client } from '../../lib/sanity/sanity-client';
 
 type ServicesMenuSection = {
-  _id: string;
-  index: number;
   title: string;
   subtitle: string;
+  menuItems: MenuItem[];
+};
+
+type MenuItem = {
+  title: string;
+  id: string;
+  description: { children: Array<{ text: string }> }[];
+  descriptionBulleted: { children: Array<{ text: string }> }[];
+  price: string;
 };
 
 export const runtime = 'edge';
@@ -18,18 +25,65 @@ export const metadata = {
 };
 
 export default async function ServicesPage() {
-  const servicesMenuSection = await client.fetch<ServicesMenuSection[]>(
-    `*[_type == "servicesMenuSection"]`
-  );
+  // const query = `*[_type == "servicesMenuSection"]{
+  //     title,
+  //     subtitle,
+  //     menuItems[]{
+  //         title,
+  //         id,
+  //         description[]{
+  //             children[]{
+  //                 text
+  //             }
+  //         },
+  //         descriptionBulleted[]{
+  //             children[]{
+  //                 text
+  //             }
+  //         },
+  //         price
+  //     }
+  // }`;
+
+  const query = `*[_type == "servicesMenuSection"]{
+    title,
+    subtitle,
+    "menuItems": menuItems[]->{
+      title,
+      id,
+      description[]{
+        children[]{
+          text
+        }
+      },
+      descriptionBulleted[]{
+        children[]{
+          text
+        }
+      },
+      price
+    }
+  }`;
+
+  const servicesMenuSection = await client.fetch<ServicesMenuSection[]>(query);
+
+  // const servicesMenuSection = await client.fetch<ServicesMenuSection[]>(
+  //   `*[_type == "servicesMenuSection"]`
+  // );
 
   return (
     <>
       <div className="mx-auto w-full max-w-screen-2xl px-4 ">
         <h4 className="mb-6 w-full text-4xl font-bold tracking-tight text-gray-800">Services</h4>
 
-        {servicesMenuSection.map((service, index) => {
-          return <MenuSection key={index} title={service.title} subtitle={service.subtitle} />;
-        })}
+        {servicesMenuSection.map((service, index) => (
+          <MenuSection
+            key={index}
+            title={service.title}
+            subtitle={service.subtitle}
+            menuItems={service.menuItems}
+          />
+        ))}
       </div>
     </>
   );
