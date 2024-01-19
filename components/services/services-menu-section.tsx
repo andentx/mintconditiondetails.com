@@ -2,6 +2,7 @@ type MenuSectionProps = {
   title: string;
   subtitle: string;
   menuItems: MenuItem[];
+  images: SanityImage[]; // Add this line
 };
 
 type MenuItem = {
@@ -11,7 +12,14 @@ type MenuItem = {
   price: string;
 };
 
-export function MenuSection({ title, subtitle, menuItems }: MenuSectionProps) {
+type SanityImage = {
+  asset: {
+    _ref: string;
+  };
+};
+
+export function MenuSection({ title, subtitle, menuItems, images }: MenuSectionProps) {
+  console.log(title);
   return (
     <>
       <div className="bg-blue-200">
@@ -21,6 +29,7 @@ export function MenuSection({ title, subtitle, menuItems }: MenuSectionProps) {
             <p className="mt-4 text-gray-500">{subtitle}</p>
             <div className="mt-4 bg-purple-200 text-gray-500">
               {menuItems.map((item) => {
+                // console.log(item);
                 return (
                   <div key={item.index} className="bg-green-200">
                     <h3>{item.title}</h3>
@@ -34,6 +43,11 @@ export function MenuSection({ title, subtitle, menuItems }: MenuSectionProps) {
                 );
               })}
             </div>
+          </div>
+          <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:mt-4 sm:gap-6 lg:mt-14 lg:gap-8">
+            {images.map((image, idx) => (
+              <div key={idx} className="h-64 w-64 bg-red-200" />
+            ))}
           </div>
         </div>
       </div>

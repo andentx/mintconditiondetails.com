@@ -5,6 +5,7 @@ type ServicesMenuSection = {
   title: string;
   subtitle: string;
   menuItems: MenuItem[];
+  images: SanityImage[];
 };
 
 type MenuItem = {
@@ -12,6 +13,12 @@ type MenuItem = {
   index: string;
   description: { children: Array<{ text: string }> }[];
   price: string;
+};
+
+type SanityImage = {
+  asset: {
+    _ref: string;
+  };
 };
 
 export const runtime = 'edge';
@@ -36,6 +43,11 @@ export default async function ServicesPage() {
         }
       },
       price
+    },
+    images[]{
+      asset->{
+        _ref
+      }
     }
   }`;
 
@@ -56,6 +68,7 @@ export default async function ServicesPage() {
             title={service.title}
             subtitle={service.subtitle}
             menuItems={service.menuItems}
+            images={service.images}
           />
         ))}
       </div>
