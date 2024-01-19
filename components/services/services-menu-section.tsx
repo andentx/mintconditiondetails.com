@@ -22,7 +22,7 @@ export function MenuSection({ title, subtitle, menuItems, images }: MenuSectionP
   console.log(title);
   return (
     <>
-      <div className="bg-blue-200">
+      <div className="">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 px-4 py-16 sm:px-6 sm:py-16 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
           <div>
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{title}</h2>
@@ -56,7 +56,7 @@ export function MenuSection({ title, subtitle, menuItems, images }: MenuSectionP
 
           <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:mt-4 sm:gap-6 lg:mt-14 lg:gap-8">
             {images.map((image, idx) => (
-              <div key={idx} className="h-64 w-64 rounded-lg bg-red-200" />
+              <div key={idx} className="h-64 w-64 rounded-lg bg-gray-200" />
             ))}
           </div>
         </div>
