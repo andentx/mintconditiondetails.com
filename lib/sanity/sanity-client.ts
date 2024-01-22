@@ -1,3 +1,4 @@
+import imageUrlBuilder from '@sanity/image-url';
 import { createClient } from 'next-sanity';
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
@@ -10,3 +11,7 @@ export const client = createClient({
   apiVersion,
   useCdn: false // if you're using ISR or only static generation at build time then you can set this to `false` to guarantee no stale content
 });
+
+const builder = imageUrlBuilder(client);
+
+export const urlFor = (source: any) => builder.image(source);
