@@ -1,36 +1,6 @@
 import { MenuSection } from 'components/services/services-menu-section';
 import { client } from '../../lib/sanity/sanity-client';
-
-type ServicesMenuSection = {
-  title: string;
-  subtitle: string;
-  menuItems: MenuItem[];
-  images: SanityImage[];
-};
-
-type BlockContent = {
-  _type: string;
-  children: Array<{
-    _type: string;
-    text: string;
-    marks?: string[];
-  }>;
-  markDefs?: any[];
-  style?: string;
-};
-
-type MenuItem = {
-  title: string;
-  index: string;
-  description: BlockContent[];
-  price: string;
-};
-
-type SanityImage = {
-  asset: {
-    _ref: string;
-  };
-};
+import { ServicesMenuSection } from '../../lib/sanity/types';
 
 export const runtime = 'edge';
 
@@ -59,10 +29,6 @@ export default async function ServicesPage() {
   }`;
 
   const servicesMenuSection = await client.fetch<ServicesMenuSection[]>(query);
-
-  // const servicesMenuSection = await client.fetch<ServicesMenuSection[]>(
-  //   `*[_type == "servicesMenuSection"]`
-  // );
 
   return (
     <>
