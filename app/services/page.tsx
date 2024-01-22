@@ -8,10 +8,21 @@ type ServicesMenuSection = {
   images: SanityImage[];
 };
 
+type BlockContent = {
+  _type: string;
+  children: Array<{
+    _type: string;
+    text: string;
+    marks?: string[];
+  }>;
+  markDefs?: any[];
+  style?: string;
+};
+
 type MenuItem = {
   title: string;
   index: string;
-  description: { children: Array<{ text: string }> }[];
+  description: BlockContent[];
   price: string;
 };
 
@@ -37,11 +48,7 @@ export default async function ServicesPage() {
     "menuItems": menuItems[]->{
       title,
       index,
-      description[]{
-        children[]{
-          text
-        }
-      },
+      description[]{..., children[]{...}},
       price
     },
     images[]{
