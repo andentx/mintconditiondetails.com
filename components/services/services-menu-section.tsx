@@ -1,14 +1,27 @@
+import { PortableText } from '@portabletext/react';
+
 type MenuSectionProps = {
   title: string;
   subtitle: string;
   menuItems: MenuItem[];
-  images: SanityImage[]; // Add this line
+  images: SanityImage[];
+};
+
+type BlockContent = {
+  _type: string;
+  children: Array<{
+    _type: string;
+    text: string;
+    marks?: string[];
+  }>;
+  markDefs?: any[];
+  style?: string;
 };
 
 type MenuItem = {
   title: string;
   index: string;
-  description: { children: Array<{ text: string }> }[];
+  description: BlockContent[];
   price: string;
 };
 
@@ -19,7 +32,6 @@ type SanityImage = {
 };
 
 export function MenuSection({ title, subtitle, menuItems, images }: MenuSectionProps) {
-  console.log(title);
   return (
     <>
       <div className="">
@@ -37,15 +49,7 @@ export function MenuSection({ title, subtitle, menuItems, images }: MenuSectionP
                   >
                     <dt className="font-medium text-gray-900">{item.title}</dt>
                     <dd className="mb-2 mt-2 text-sm text-gray-500 ">
-                      <div>
-                        {item.description.map((descriptionElement, index) => {
-                          return (
-                            <p key={index} className="">
-                              {descriptionElement.children[0]?.text}
-                            </p>
-                          );
-                        })}
-                      </div>
+                      <PortableText value={item.description} />
                     </dd>
                     <dd className="font-montserratBold mt-2 text-sm text-gray-900">{item.price}</dd>
                   </div>
