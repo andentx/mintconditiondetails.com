@@ -19,3 +19,11 @@ input,
 button {
   @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50;
 }
+
+.portableText p {
+  @apply text-base text-gray-700;
+}
+
+.portableText h1 {
+  @apply text-2xl font-bold text-blue-600;
+}
