@@ -24,11 +24,7 @@ export default async function ServicesPage() {
       description[]{..., children[]{...}},
       price
     },
-    images[]{
-      asset->{
-        _ref
-      }
-    }
+    "images": images[].asset->{_id, url}
   }`;
 
   const servicesMenuSection = await client.fetch<ServicesMenuSection[]>(query);
