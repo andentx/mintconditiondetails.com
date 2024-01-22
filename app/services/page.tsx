@@ -16,6 +16,7 @@ export default async function ServicesPage() {
     title,
     subtitle,
     "menuItems": menuItems[]->{
+      _id,
       title,
       index,
       description[]{..., children[]{...}},
