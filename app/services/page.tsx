@@ -12,7 +12,9 @@ export const metadata = {
 };
 
 export default async function ServicesPage() {
-  const query = `*[_type == "servicesMenuSection"]{
+  const query = `*[_type == "servicesMenuSection"] | order(index asc) {
+    _id,
+    index,
     title,
     subtitle,
     "menuItems": menuItems[]->{
@@ -36,9 +38,10 @@ export default async function ServicesPage() {
       <div className="mx-auto w-full max-w-screen-2xl px-4 ">
         <h4 className="mb-6 w-full text-4xl font-bold tracking-tight text-gray-800">Services</h4>
 
-        {servicesMenuSection.map((service, index) => (
+        {servicesMenuSection.map((service) => (
           <MenuSection
-            key={index}
+            key={service._id}
+            index={service.index}
             title={service.title}
             subtitle={service.subtitle}
             menuItems={service.menuItems}
