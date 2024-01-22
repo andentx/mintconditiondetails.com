@@ -1,35 +1,5 @@
 import { PortableText } from '@portabletext/react';
-
-type MenuSectionProps = {
-  title: string;
-  subtitle: string;
-  menuItems: MenuItem[];
-  images: SanityImage[];
-};
-
-type BlockContent = {
-  _type: string;
-  children: Array<{
-    _type: string;
-    text: string;
-    marks?: string[];
-  }>;
-  markDefs?: any[];
-  style?: string;
-};
-
-type MenuItem = {
-  title: string;
-  index: string;
-  description: BlockContent[];
-  price: string;
-};
-
-type SanityImage = {
-  asset: {
-    _ref: string;
-  };
-};
+import { MenuSectionProps } from 'lib/sanity/types';
 
 export function MenuSection({ title, subtitle, menuItems, images }: MenuSectionProps) {
   return (
