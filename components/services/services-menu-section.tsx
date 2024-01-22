@@ -14,14 +14,16 @@ export function MenuSection({ title, subtitle, menuItems, images }: MenuSectionP
               {menuItems.map((item) => {
                 return (
                   <div
-                    key={item.index}
+                    key={item._id}
                     className="flex flex-col border-t-2 border-solid border-gray-200 pt-4 "
                   >
                     <dt className="font-medium text-gray-900">{item.title}</dt>
                     <dd className="mb-2 mt-2 text-sm text-gray-500 ">
-                      <PortableText value={item.description} />
+                      <span className="portableText">
+                        <PortableText value={item.description} />
+                      </span>
                     </dd>
-                    <dd className="font-montserratBold mt-2 text-sm text-gray-900">{item.price}</dd>
+                    <dd className="mt-2 text-sm text-gray-900 ">{item.price}</dd>
                   </div>
                 );
               })}
