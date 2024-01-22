@@ -1,4 +1,5 @@
 import { PortableText } from '@portabletext/react';
+import { urlFor } from 'lib/sanity/sanity-client';
 import { MenuSectionProps } from 'lib/sanity/types';
 
 export function MenuSection({ title, subtitle, menuItems, images }: MenuSectionProps) {
@@ -32,7 +33,12 @@ export function MenuSection({ title, subtitle, menuItems, images }: MenuSectionP
 
           <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:mt-4 sm:gap-6 lg:mt-14 lg:gap-8">
             {images.map((image, idx) => (
-              <div key={idx} className="h-64 w-64 rounded-lg bg-gray-200" />
+              <img
+                key={idx}
+                src={urlFor(image).url()}
+                alt="Menu Item"
+                className="h-64 w-64 rounded-lg"
+              />
             ))}
           </div>
         </div>
