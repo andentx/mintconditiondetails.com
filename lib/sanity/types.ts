@@ -10,6 +10,8 @@ export type BlockContent = {
 };
 
 export type ServicesMenuSection = {
+  _id: string;
+  index: number;
   title: string;
   subtitle: string;
   menuItems: MenuItem[];
@@ -25,6 +27,7 @@ export type MenuItem = {
 };
 
 export type MenuSectionProps = {
+  index: number;
   title: string;
   subtitle: string;
   menuItems: MenuItem[];
