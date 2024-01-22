@@ -17,11 +17,13 @@ export type ServicesMenuSection = {
 };
 
 export type MenuItem = {
+  _id: string;
   title: string;
   index: string;
   description: BlockContent[];
   price: string;
 };
+
 export type MenuSectionProps = {
   title: string;
   subtitle: string;
