@@ -35,6 +35,7 @@ export type MenuSectionProps = {
 };
 
 export type SanityImage = {
+  _id: string;
   asset: {
     _ref: string;
   };
