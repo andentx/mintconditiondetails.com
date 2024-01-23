@@ -1,3 +1,4 @@
+import Footer from 'components/layout/footer';
 import Navbar from 'components/layout/navbar';
 import { GeistSans } from 'geist/font';
 import { ensureStartsWith } from 'lib/utils';
@@ -33,11 +34,16 @@ export const metadata = {
 
 export default async function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={GeistSans.variable}>
-      <body className="bg-neutral-50 text-black selection:bg-teal-300">
+    <html lang="en" className={`flex min-h-full flex-col ${GeistSans.variable}`}>
+      <body className="flex grow flex-col items-center bg-neutral-50 text-black selection:bg-emerald-300">
         <Navbar />
         <Suspense>
-          <main className="pt-4 lg:pt-10 ">{children}</main>
+          <main className="flex w-full max-w-screen-2xl grow flex-col items-center pb-20 pt-4 lg:pt-10">
+            {children}
+          </main>
+        </Suspense>
+        <Suspense>
+          <Footer />
         </Suspense>
       </body>
     </html>
