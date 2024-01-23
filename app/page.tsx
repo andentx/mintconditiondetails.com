@@ -39,10 +39,10 @@ export default async function HomePage() {
   return (
     <>
       <LandingHero />
-      <h4 className="mx-auto mb-6 max-w-screen-2xl px-4 text-4xl font-bold tracking-tight text-gray-800">
+      <h4 className="mx-auto mb-6 w-full max-w-screen-2xl px-4 text-center text-4xl font-bold tracking-tight text-gray-800">
         Our Services
       </h4>
-      <section className="mx-auto mb-10 grid max-w-screen-2xl grid-cols-1 gap-4 px-4 pb-4 md:grid-cols-2 lg:grid-cols-3">
+      <section className="mx-auto mb-10 grid w-full max-w-screen-2xl grid-cols-1 gap-4 px-4 pb-4 md:grid-cols-2 lg:grid-cols-3">
         {homePageServices
           .sort((a, b) => a.index - b.index) // Sort the array by index
           .map((service, index) => {
@@ -81,7 +81,7 @@ export default async function HomePage() {
           })}
       </section>
 
-      <div className="mx-auto mb-20 flex max-w-screen-2xl justify-center px-4 py-0 ">
+      <div className="mx-auto mb-20 flex w-full max-w-screen-2xl justify-center px-4 py-0">
         <a
           href="/services"
           className="rounded-lg border border-gray-800 bg-emerald-300/80 px-6 py-4 text-xl text-gray-800 transition-all ease-in-out hover:bg-emerald-400 focus:bg-emerald-400 focus:outline-none focus:ring focus:ring-emerald-400 active:bg-emerald-500"
@@ -90,12 +90,12 @@ export default async function HomePage() {
         </a>
       </div>
 
-      <h4 className="mx-auto mb-6 max-w-screen-2xl px-4 text-4xl font-bold tracking-tight text-gray-800">
+      <h4 className="mx-auto mb-6 w-full max-w-screen-2xl px-4 text-center text-4xl font-bold tracking-tight text-gray-800">
         Online Store
       </h4>
       <ThreeItemGrid />
 
-      <div className="mx-auto mb-20 flex max-w-screen-2xl justify-center px-4 pt-10 ">
+      <div className="mx-auto mb-20 flex w-full max-w-screen-2xl justify-center px-4">
         <a
           href="/shop"
           className="rounded-lg border border-gray-800 bg-emerald-300/80 px-6 py-4 text-xl text-gray-800 transition-all ease-in-out hover:bg-emerald-400 focus:bg-emerald-400 focus:outline-none focus:ring focus:ring-emerald-400 active:bg-emerald-500"
@@ -104,7 +104,7 @@ export default async function HomePage() {
         </a>
       </div>
 
-      <h4 className="mx-auto mb-6 max-w-screen-2xl px-4 text-4xl font-bold tracking-tight text-gray-800 md:mb-4">
+      <h4 className="mx-auto mb-6 w-full max-w-screen-2xl px-4 text-center text-4xl font-bold tracking-tight text-gray-800 md:mb-4">
         Contact
       </h4>
       <div className="mx-auto mb-20 flex w-full max-w-screen-2xl justify-center px-4">
