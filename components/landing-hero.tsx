@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function LandingHero() {
   return (
-    <div className="relative mx-auto mb-20 max-w-screen-2xl">
+    <div className="relative mx-auto mb-20 w-full max-w-screen-2xl">
       <div aria-hidden="true" className="absolute inset-0 flex justify-center overflow-hidden px-4">
         <Image
           src="https://res.cloudinary.com/dsz45zrla/image/upload/v1703008119/Image_1_dtzv0k.jpg"
