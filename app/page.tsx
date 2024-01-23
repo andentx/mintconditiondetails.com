@@ -1,9 +1,7 @@
 import ContactSection from 'components/contact-section';
 import { ThreeItemGrid } from 'components/grid/three-items';
 import LandingHero from 'components/landing-hero';
-import Footer from 'components/layout/footer';
 import Image from 'next/image';
-import { Suspense } from 'react';
 import { client } from '../lib/sanity/sanity-client';
 import { urlForImage } from '../lib/sanity/sanity-image';
 
@@ -112,10 +110,6 @@ export default async function HomePage() {
       <div className="mx-auto mb-20 flex w-full max-w-screen-2xl justify-center px-4">
         <ContactSection />
       </div>
-
-      <Suspense>
-        <Footer />
-      </Suspense>
     </>
   );
 }
