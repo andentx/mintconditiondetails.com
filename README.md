@@ -1,3 +1,17 @@
 # mintconditiondetails.com
 
-- update formspree id
+## Features
+
+### Controlled by Shopify
+
+- products
+
+- collections
+
+- pages
+
+- pages header menu
+
+- pages footer menu
+
+- SEO
