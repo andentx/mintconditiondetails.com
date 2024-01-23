@@ -13,14 +13,14 @@ export default async function Navbar() {
 
   return (
     <nav className="relative mx-auto flex max-w-screen-2xl items-center justify-between border-neutral-200 p-4">
-      <div className="block flex-none md:hidden">
+      <div className="mr-4 block flex-none md:hidden">
         <MobileMenu menu={menu} />
       </div>
       <div className="flex w-full items-center">
-        <div className="flex grow">
+        <div className="flex grow justify-center gap-4 md:justify-start">
           <Link
             href="/"
-            className="mr-2 flex w-full items-center justify-center rounded-lg md:w-auto lg:mr-6"
+            className="flex w-auto items-center justify-center rounded-lg px-2 md:w-auto"
           >
             <LogoSquare />
             <div className="mr-1 hidden flex-none sm:block sm:text-base md:block">
@@ -43,10 +43,10 @@ export default async function Navbar() {
             </ul>
           ) : null}
         </div>
-        <div className="hidden justify-center md:flex">
+        <div className="mr-4 hidden justify-center lg:flex">
           <Search />
         </div>
-        <div className="ml-4 flex justify-end">
+        <div className="flex justify-end">
           <Suspense fallback={<OpenCart />}>
             <Cart />
           </Suspense>
