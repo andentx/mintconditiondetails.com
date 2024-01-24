@@ -106,9 +106,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={state.submitting || state.succeeded}
-            className={`rounded-lg border border-gray-800 bg-emerald-300/80 px-6 py-4 text-center text-lg text-gray-800 transition-all ease-in-out hover:bg-emerald-400 active:bg-emerald-500 ${
-              state.succeeded ? 'bg-emerald-500 hover:bg-emerald-500' : ''
-            }`}
+            className={`mintButton ${state.succeeded ? 'bg-emerald-500 hover:bg-emerald-500' : ''}`}
           >
             {state.succeeded ? 'Message Sent!' : 'Send message'}
           </button>

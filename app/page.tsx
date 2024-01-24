@@ -54,7 +54,7 @@ export default async function HomePage() {
               <a
                 href="/services"
                 key={index}
-                className={`group relative flex h-40 w-full items-center justify-center rounded-lg hover:cursor-pointer  md:h-60 lg:h-96`}
+                className={`group relative flex h-40 w-full items-center justify-center rounded-lg hover:cursor-pointer md:h-60 lg:h-96`}
               >
                 <div
                   aria-hidden="true"
@@ -82,10 +82,7 @@ export default async function HomePage() {
       </section>
 
       <div className="mx-auto mb-20 flex w-full max-w-screen-2xl justify-center px-4 py-0">
-        <a
-          href="/services"
-          className="rounded-lg border border-gray-800 bg-emerald-300/80 px-6 py-4 text-xl text-gray-800 transition-all ease-in-out hover:bg-emerald-400 active:bg-emerald-500"
-        >
+        <a href="/services" className="mintButton">
           View All Services
         </a>
       </div>
@@ -96,10 +93,7 @@ export default async function HomePage() {
       <ThreeItemGrid />
 
       <div className="mx-auto mb-20 flex w-full max-w-screen-2xl justify-center px-4">
-        <a
-          href="/shop"
-          className="rounded-lg border border-gray-800 bg-emerald-300/80 px-6 py-4 text-xl text-gray-800 transition-all ease-in-out hover:bg-emerald-400 active:bg-emerald-500"
-        >
+        <a href="/shop" className="mintButton">
           Shop All Products
         </a>
       </div>

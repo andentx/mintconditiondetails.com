@@ -16,8 +16,7 @@ function SubmitButton({
   selectedVariantId: string | undefined;
 }) {
   const { pending } = useFormStatus();
-  const buttonClasses =
-    'relative flex w-full items-center justify-center rounded-lg border border-gray-800 bg-emerald-300 p-4 tracking-wide text-black';
+  const buttonClasses = 'relative w-full mintButton';
   const disabledClasses = 'cursor-not-allowed opacity-60 hover:opacity-60';
 
   if (!availableForSale) {

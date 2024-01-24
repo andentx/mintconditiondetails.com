@@ -8,10 +8,7 @@ export default function Error({ reset }: { reset: () => void }) {
         There was an issue with our storefront. This could be a temporary issue, please try your
         action again.
       </p>
-      <button
-        className="mx-auto mt-4 flex w-full items-center justify-center rounded-full bg-emerald-300 p-4 tracking-wide text-black hover:opacity-90"
-        onClick={() => reset()}
-      >
+      <button className="mintButton mx-auto mt-4 w-full rounded-full" onClick={() => reset()}>
         Try Again
       </button>
     </div>
