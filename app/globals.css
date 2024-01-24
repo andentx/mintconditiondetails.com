@@ -21,6 +21,10 @@ button {
   @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-50;
 }
 
+.mintButton {
+  @apply flex items-center justify-center rounded-md border border-gray-800 bg-emerald-300/80 px-8 py-3 text-xl font-medium tracking-wide text-gray-800 shadow backdrop-blur-sm transition-colors ease-in-out hover:bg-emerald-300 hover:backdrop-blur-none active:bg-emerald-400;
+}
+
 .portableText p {
   @apply text-base text-gray-700;
 }
