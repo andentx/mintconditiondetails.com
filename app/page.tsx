@@ -72,7 +72,7 @@ export default async function HomePage() {
                   )}
                 </div>
                 <div className="relative mx-auto flex flex-col items-center justify-center text-center">
-                  <div className="inline-block rounded-md border border-gray-800 bg-emerald-300/80 px-8 py-3 text-2xl font-medium text-black shadow backdrop-blur-sm transition-all ease-in-out group-hover:bg-emerald-400 group-focus:bg-emerald-400 group-active:bg-emerald-500">
+                  <div className=" mintButton group-hover:bg-emerald-400 group-focus:bg-emerald-400 group-active:bg-emerald-500">
                     {service.title}
                   </div>
                 </div>
