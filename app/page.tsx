@@ -54,7 +54,7 @@ export default async function HomePage() {
               <a
                 href="/services"
                 key={index}
-                className={`group relative flex h-40 w-full items-center justify-center rounded-lg hover:cursor-pointer focus:outline-none focus:ring focus:ring-emerald-300 md:h-60 lg:h-96`}
+                className={`group relative flex h-40 w-full items-center justify-center rounded-lg hover:cursor-pointer  md:h-60 lg:h-96`}
               >
                 <div
                   aria-hidden="true"
@@ -72,7 +72,7 @@ export default async function HomePage() {
                   )}
                 </div>
                 <div className="relative mx-auto flex flex-col items-center justify-center text-center">
-                  <div className="inline-block rounded-md border border-gray-800 bg-emerald-300/80 px-8 py-3 text-2xl font-medium text-black shadow backdrop-blur-sm transition-all ease-in-out focus:outline-none focus:ring-4 focus:ring-emerald-300 group-hover:bg-emerald-400 group-focus:bg-emerald-400 group-active:bg-emerald-500">
+                  <div className="inline-block rounded-md border border-gray-800 bg-emerald-300/80 px-8 py-3 text-2xl font-medium text-black shadow backdrop-blur-sm transition-all ease-in-out group-hover:bg-emerald-400 group-focus:bg-emerald-400 group-active:bg-emerald-500">
                     {service.title}
                   </div>
                 </div>
@@ -84,7 +84,7 @@ export default async function HomePage() {
       <div className="mx-auto mb-20 flex w-full max-w-screen-2xl justify-center px-4 py-0">
         <a
           href="/services"
-          className="rounded-lg border border-gray-800 bg-emerald-300/80 px-6 py-4 text-xl text-gray-800 transition-all ease-in-out hover:bg-emerald-400 focus:bg-emerald-400 focus:outline-none focus:ring focus:ring-emerald-400 active:bg-emerald-500"
+          className="rounded-lg border border-gray-800 bg-emerald-300/80 px-6 py-4 text-xl text-gray-800 transition-all ease-in-out hover:bg-emerald-400 active:bg-emerald-500"
         >
           View All Services
         </a>
@@ -98,7 +98,7 @@ export default async function HomePage() {
       <div className="mx-auto mb-20 flex w-full max-w-screen-2xl justify-center px-4">
         <a
           href="/shop"
-          className="rounded-lg border border-gray-800 bg-emerald-300/80 px-6 py-4 text-xl text-gray-800 transition-all ease-in-out hover:bg-emerald-400 focus:bg-emerald-400 focus:outline-none focus:ring focus:ring-emerald-400 active:bg-emerald-500"
+          className="rounded-lg border border-gray-800 bg-emerald-300/80 px-6 py-4 text-xl text-gray-800 transition-all ease-in-out hover:bg-emerald-400 active:bg-emerald-500"
         >
           Shop All Products
         </a>

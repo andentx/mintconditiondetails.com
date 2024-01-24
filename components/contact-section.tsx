@@ -26,7 +26,7 @@ export default function ContactSection() {
             </dt>
             <dd>
               <a
-                className="rounded-md p-2 transition-colors ease-in-out focus:outline-none focus:ring focus:ring-emerald-400 active:text-black group-hover:text-gray-900 "
+                className="rounded-md p-2 transition-colors ease-in-out active:text-black group-hover:text-gray-900 "
                 href="mailto:hello@grizzlyguitar.com"
               >
                 hello@mintconditiondetails.com

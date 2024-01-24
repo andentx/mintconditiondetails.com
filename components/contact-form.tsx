@@ -22,7 +22,7 @@ export default function ContactForm() {
                 name="first-name"
                 id="first-name"
                 autoComplete="given-name"
-                className="block w-full rounded-md border border-black bg-gray-300 px-3.5 py-2 text-black focus:outline-none  focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2"
+                className="block w-full rounded-md border border-black bg-gray-300 px-3.5 py-2 text-black "
                 style={{ WebkitAppearance: 'none' }}
               />
               <ValidationError prefix="FirstName" field="first-name" errors={state.errors} />
@@ -41,7 +41,7 @@ export default function ContactForm() {
                 name="last-name"
                 id="last-name"
                 autoComplete="family-name"
-                className="block w-full rounded-md border border-black bg-gray-300 px-3.5 py-2 text-black focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2"
+                className="block w-full rounded-md border border-black bg-gray-300 px-3.5 py-2 text-black "
                 style={{ WebkitAppearance: 'none' }}
               />
               <ValidationError prefix="LastName" field="last-name" errors={state.errors} />
@@ -57,7 +57,7 @@ export default function ContactForm() {
                 name="email"
                 id="email"
                 autoComplete="email"
-                className="ocus:outline-none block w-full rounded-md border border-black bg-gray-300 px-3.5 py-2 text-black focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2"
+                className="block w-full rounded-md border border-black bg-gray-300 px-3.5 py-2 text-black "
                 style={{ WebkitAppearance: 'none' }}
               />
               <ValidationError prefix="Email" field="email" errors={state.errors} />
@@ -76,7 +76,7 @@ export default function ContactForm() {
                 name="phone-number"
                 id="phone-number"
                 autoComplete="tel"
-                className="ocus:outline-none block w-full rounded-md border border-black bg-gray-300 px-3.5 py-2 text-black focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2"
+                className="block w-full rounded-md border border-black bg-gray-300 px-3.5 py-2 text-black"
                 style={{ WebkitAppearance: 'none' }}
               />
               <ValidationError prefix="PhoneNumber" field="phone-number" errors={state.errors} />
@@ -94,7 +94,7 @@ export default function ContactForm() {
                 name="message"
                 id="message"
                 rows={4}
-                className="block w-full rounded-md border border-black bg-gray-300 px-3.5 py-2 text-black focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2"
+                className="block w-full rounded-md border border-black bg-gray-300 px-3.5 py-2 text-black"
                 defaultValue={''}
                 style={{ WebkitAppearance: 'none' }}
               />
@@ -106,7 +106,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={state.submitting || state.succeeded}
-            className={`rounded-lg border border-gray-800 bg-emerald-300/80 px-6 py-4 text-center text-lg text-gray-800 transition-all ease-in-out hover:bg-emerald-400 focus:bg-emerald-400 focus:outline-none focus:ring focus:ring-emerald-400 active:bg-emerald-500 ${
+            className={`rounded-lg border border-gray-800 bg-emerald-300/80 px-6 py-4 text-center text-lg text-gray-800 transition-all ease-in-out hover:bg-emerald-400 active:bg-emerald-500 ${
               state.succeeded ? 'bg-emerald-500 hover:bg-emerald-500' : ''
             }`}
           >

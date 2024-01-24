@@ -26,13 +26,13 @@ export default function LandingHero() {
         <div className="flex flex-col gap-8 sm:flex-row sm:gap-28">
           <a
             href="/services"
-            className="inline-block rounded-md border border-gray-800 bg-emerald-300/80 px-8 py-3 text-base font-medium text-gray-800 shadow backdrop-blur-sm transition-colors ease-in-out hover:bg-emerald-400 focus:bg-emerald-400 focus:outline-none focus:ring-4 focus:ring-emerald-400"
+            className="inline-block rounded-md border border-gray-800 bg-emerald-300/80 px-8 py-3 text-base font-medium text-gray-800 shadow backdrop-blur-sm transition-colors ease-in-out hover:bg-emerald-400 "
           >
             View Services
           </a>
           <a
             href="/shop"
-            className="inline-block rounded-md border border-gray-800 bg-emerald-300/80 px-8 py-3 text-base font-medium text-gray-800 shadow backdrop-blur-sm transition-colors ease-in-out hover:bg-emerald-400 focus:bg-emerald-400 focus:outline-none focus:ring-4 focus:ring-emerald-400"
+            className="inline-block rounded-md border border-gray-800 bg-emerald-300/80 px-8 py-3 text-base font-medium text-gray-800 shadow backdrop-blur-sm transition-colors ease-in-out hover:bg-emerald-400 "
           >
             View Store
           </a>
