@@ -12,21 +12,21 @@ export default function ContactSection() {
           <div className="flex gap-x-2">
             <dt className="flex-none">
               <span className="sr-only">Address</span>
-              <BuildingOffice2Icon className="h-7 w-6 text-gray-400" aria-hidden="true" />
+              <BuildingOffice2Icon className="h-7 w-6 text-gray-600" aria-hidden="true" />
             </dt>
-            <dd className="pl-2">Baltimore, MD</dd>
+            <dd className="pl-2 text-gray-600">Baltimore, MD</dd>
           </div>
           <div className="group flex gap-x-2">
             <dt className="flex-none ">
               <span className="sr-only">Email</span>
               <EnvelopeIcon
-                className="h-7 w-6 text-gray-400 transition-colors ease-in-out group-hover:text-gray-900"
+                className="h-7 w-6 text-gray-600 transition-colors ease-in-out group-hover:text-gray-900"
                 aria-hidden="true"
               />
             </dt>
             <dd>
               <a
-                className="rounded-md p-2 transition-colors ease-in-out active:text-black group-hover:text-gray-900 "
+                className="rounded px-1 py-1 text-gray-600 underline-offset-4 transition-colors ease-in-out hover:text-gray-900 hover:underline active:text-black group-hover:text-gray-900"
                 href="mailto:hello@grizzlyguitar.com"
               >
                 hello@mintconditiondetails.com
