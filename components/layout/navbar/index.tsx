@@ -29,12 +29,12 @@ export default async function Navbar() {
             </div>
           </Link>
           {menu.length ? (
-            <ul className="hidden gap-6 text-sm md:flex md:items-center">
+            <ul className="hidden gap-4 text-sm md:flex md:items-center">
               {menu.map((item: Menu) => (
                 <li key={item.title}>
                   <Link
                     href={item.path}
-                    className="text-neutral-500 underline-offset-4 hover:text-black hover:underline"
+                    className="rounded px-1 py-1 text-neutral-500 underline-offset-4 hover:text-black hover:underline"
                   >
                     {item.title}
                   </Link>
