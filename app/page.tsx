@@ -54,24 +54,19 @@ export default async function HomePage() {
               <a
                 href="/services"
                 key={index}
-                className={`group relative flex h-40 w-full items-center justify-center rounded-lg hover:cursor-pointer md:h-60 lg:h-96`}
+                className="group relative grid h-40 w-full grid-cols-1 items-center justify-items-center overflow-hidden rounded-lg hover:cursor-pointer md:h-60 lg:h-96"
               >
-                <div
-                  aria-hidden="true"
-                  className="absolute inset-0 flex justify-center overflow-hidden rounded-lg bg-emerald-300 "
-                >
-                  {imageUrl ? (
-                    <Image
-                      className="h-full w-full rounded-lg border border-gray-800 object-cover transition-all ease-in-out group-hover:opacity-60 group-focus:opacity-60"
-                      fill={true}
-                      alt={service.imageAltText}
-                      src={imageUrl}
-                    />
-                  ) : (
-                    <div className="h-full w-full rounded-lg bg-neutral-400 " />
-                  )}
-                </div>
-                <div className="relative mx-auto flex flex-col items-center justify-center text-center">
+                {imageUrl ? (
+                  <Image
+                    className="col-start-1 row-start-1 h-full w-full rounded-lg border border-gray-800 object-cover transition-all ease-in-out group-hover:opacity-60 group-focus:opacity-60"
+                    fill={true}
+                    alt={service.imageAltText}
+                    src={imageUrl}
+                  />
+                ) : (
+                  <div className="h-full w-full rounded-lg bg-neutral-400 " />
+                )}
+                <div className="z-50 col-start-1 row-start-1 flex h-full w-full flex-col items-center justify-center text-center">
                   <div className=" mintButton group-hover:bg-emerald-400 group-focus:bg-emerald-400 group-active:bg-emerald-500">
                     {service.title}
                   </div>
