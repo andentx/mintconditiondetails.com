@@ -28,7 +28,7 @@ export default async function AboutPage() {
           </div>
           <div className="flex flex-col md:w-1/2">
             <Image
-              src="https://res.cloudinary.com/dsz45zrla/image/upload/v1705431100/detailer_hr9nsb.png"
+              src="https://res.cloudinary.com/dsz45zrla/image/upload/v1706566284/IMG_1685_1_cviiyf.jpg"
               alt="A guitar on a workbench"
               className="w-full max-w-screen-2xl rounded-md border border-gray-800 object-contain"
               height="1200"
