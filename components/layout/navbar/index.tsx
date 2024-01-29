@@ -20,7 +20,7 @@ export default async function Navbar() {
         <div className="flex grow justify-center gap-4 md:justify-start">
           <Link
             href="/"
-            className="group flex w-auto items-center justify-center rounded-lg px-2 transition-all ease-in-out md:w-auto"
+            className="group flex w-auto items-center justify-center rounded-md px-2 transition-all ease-in-out md:w-auto"
           >
             <LogoSquare />
             <div className="ml-2 mr-1 hidden flex-none sm:block sm:text-base md:block">

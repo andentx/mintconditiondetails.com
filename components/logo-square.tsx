@@ -4,9 +4,9 @@ import LogoIcon from './icons/logo';
 export default function LogoSquare({ size }: { size?: 'sm' | undefined }) {
   return (
     <div
-      className={clsx('flex flex-none items-center justify-center', {
-        'w-20px] h-[40px] rounded-xl': !size,
-        'h-[30px] w-[15px] rounded-lg': size === 'sm'
+      className={clsx('flex flex-none items-center justify-center rounded-md', {
+        'w-20px] h-[40px]': !size,
+        'h-[30px] w-[15px]': size === 'sm'
       })}
     >
       <LogoIcon
