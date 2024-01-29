@@ -20,12 +20,12 @@ export default async function Navbar() {
         <div className="flex grow justify-center gap-4 md:justify-start">
           <Link
             href="/"
-            className="flex w-auto items-center justify-center rounded-lg px-2 md:w-auto"
+            className="group flex w-auto items-center justify-center rounded-lg px-2 transition-all ease-in-out md:w-auto"
           >
             <LogoSquare />
-            <div className="mr-1 hidden flex-none sm:block sm:text-base md:block">
-              <span className="font-bold text-gray-800 ">Mint</span>
-              <span className="font-light text-gray-800 ">Condition</span>
+            <div className="ml-2 mr-1 hidden flex-none sm:block sm:text-base md:block">
+              <span className="font-bold text-gray-800 group-hover:text-black">Mint</span>
+              <span className="font-light text-gray-800 group-hover:text-black">Condition</span>
             </div>
           </Link>
           {menu.length ? (
