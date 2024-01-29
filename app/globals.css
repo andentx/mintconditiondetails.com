@@ -22,7 +22,7 @@ button {
 }
 
 .mintButton {
-  @apply flex items-center justify-center rounded-md border border-gray-800 bg-emerald-300/80 px-8 py-3 text-xl font-medium tracking-wide text-gray-800 shadow backdrop-blur-sm transition-colors ease-in-out hover:bg-emerald-300 hover:backdrop-blur-none active:bg-emerald-400;
+  @apply flex items-center justify-center rounded-md border border-gray-800 bg-emerald-300/80 px-8 py-3 text-xl font-medium tracking-wide text-gray-800 shadow backdrop-blur-sm transition-colors ease-in-out hover:bg-emerald-400/80 active:bg-emerald-500;
 }
 
 .portableText p {
