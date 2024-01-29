@@ -36,7 +36,7 @@ export function MenuSection({ title, subtitle, menuItems, images }: MenuSectionP
             return (
               <div
                 key={image._id}
-                className="aspect-square h-full w-full overflow-hidden rounded-md bg-gray-100"
+                className="aspect-square h-full w-full overflow-hidden border border-neutral-500 bg-gray-100"
               >
                 <Image
                   src={urlFor(image).url()}
