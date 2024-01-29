@@ -54,7 +54,7 @@ export default async function HomePage() {
               <a
                 href="/services"
                 key={index}
-                className="group relative grid h-40 w-full grid-cols-1 items-center justify-items-center overflow-hidden border border-gray-600 hover:cursor-pointer md:h-60 lg:h-96"
+                className="group relative grid h-40 w-full grid-cols-1 items-center justify-items-center overflow-hidden border border-neutral-500 bg-neutral-500 hover:cursor-pointer md:h-60 lg:h-96"
               >
                 {imageUrl ? (
                   <Image
@@ -64,10 +64,10 @@ export default async function HomePage() {
                     src={imageUrl}
                   />
                 ) : (
-                  <div className="h-full w-full bg-neutral-400 " />
+                  <div className="h-full w-full bg-neutral-500 " />
                 )}
                 <div className="z-50 col-start-1 row-start-1 flex h-full w-full flex-col items-center justify-center text-center">
-                  <div className=" mintButton group-hover:bg-emerald-400 group-focus:bg-emerald-400 group-active:bg-emerald-500">
+                  <div className=" mintButton group-hover:bg-emerald-400/80 group-focus:bg-emerald-400/80 group-active:bg-emerald-500">
                     {service.title}
                   </div>
                 </div>
