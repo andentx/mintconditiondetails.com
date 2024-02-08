@@ -2,8 +2,6 @@ import { MenuSection } from 'components/services/services-menu-section';
 import { client } from '../../lib/sanity/sanity-client';
 import { ServicesMenuSection } from '../../lib/sanity/types';
 
-export const runtime = 'edge';
-
 export const dynamic = 'force-dynamic';
 
 export const metadata = {

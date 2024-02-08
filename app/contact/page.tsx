@@ -1,7 +1,5 @@
 import ContactSection from 'components/contact-section';
 
-export const runtime = 'edge';
-
 export const metadata = {
   title: 'Contact',
   description: 'Contact description'

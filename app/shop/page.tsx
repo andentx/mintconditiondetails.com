@@ -3,8 +3,6 @@ import ProductGridItems from 'components/layout/product-grid-items';
 import { defaultSort, sorting } from 'lib/constants';
 import { getProducts } from 'lib/shopify';
 
-export const runtime = 'edge';
-
 export const metadata = {
   title: 'Shop',
   description: 'Shop for products in the store.'
