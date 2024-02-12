@@ -2,6 +2,7 @@ import ContactSection from 'components/contact-section';
 import { ThreeItemGrid } from 'components/grid/three-items';
 import LandingHero from 'components/landing-hero';
 import Image from 'next/image';
+import Link from 'next/link';
 import { client } from '../lib/sanity/sanity-client';
 import { urlForImage } from '../lib/sanity/sanity-image';
 
@@ -49,7 +50,7 @@ export default async function HomePage() {
               : null;
 
             return (
-              <a
+              <Link
                 href="/services"
                 key={index}
                 className="group relative grid h-40 w-full grid-cols-1 items-center justify-items-center overflow-hidden border border-neutral-500 bg-neutral-500 hover:cursor-pointer md:h-60 lg:h-96"
@@ -69,15 +70,15 @@ export default async function HomePage() {
                     {service.title}
                   </div>
                 </div>
-              </a>
+              </Link>
             );
           })}
       </section>
 
       <div className="mx-auto mb-20 flex w-full max-w-screen-2xl justify-center px-4 py-0">
-        <a href="/services" className="mintButton">
+        <Link href="/services" className="mintButton">
           View All Services
-        </a>
+        </Link>
       </div>
 
       <h4 className="mx-auto mb-6 w-full max-w-screen-2xl px-4 text-4xl font-bold tracking-tight text-gray-800">
@@ -86,9 +87,9 @@ export default async function HomePage() {
       <ThreeItemGrid />
 
       <div className="mx-auto mb-20 flex w-full max-w-screen-2xl justify-center px-4">
-        <a href="/shop" className="mintButton">
+        <Link href="/shop" className="mintButton">
           Shop All Products
-        </a>
+        </Link>
       </div>
 
       <h4 className="mx-auto mb-6 w-full max-w-screen-2xl px-4 text-4xl font-bold tracking-tight text-gray-800 md:mb-4">

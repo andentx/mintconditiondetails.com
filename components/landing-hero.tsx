@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function LandingHero() {
   return (
@@ -24,12 +25,12 @@ export default function LandingHero() {
         </p>
 
         <div className="flex flex-col gap-8 sm:flex-row sm:gap-28">
-          <a href="/services" className="mintButton">
+          <Link href="/services" className="mintButton">
             View Services
-          </a>
-          <a href="/shop" className="mintButton">
+          </Link>
+          <Link href="/shop" className="mintButton">
             View Store
-          </a>
+          </Link>
         </div>
       </div>
     </div>
