@@ -1,6 +1,6 @@
 import Footer from 'components/layout/footer';
 import Navbar from 'components/layout/navbar';
-import { GeistSans } from 'geist/font';
+import { GeistSans } from 'geist/font/sans';
 import { ReactNode, Suspense } from 'react';
 import './globals.css';
 
