@@ -20,9 +20,9 @@ export default function LandingHero() {
           <span className="mr-[0.5ch] font-light text-gray-800">Condition</span>
           <span className="font-bold text-gray-800">Detailing</span>
         </h1>
-        <p className="mb-12 w-full max-w-xs rounded-md border border-gray-800 bg-white/80 px-6 py-4 text-base text-black backdrop-blur-sm sm:max-w-lg sm:text-lg lg:text-xl ">
+        <h2 className="mb-12 w-full max-w-xs rounded-md border border-gray-800 bg-white/80 px-6 py-4 text-base text-black backdrop-blur-sm sm:max-w-lg sm:text-lg lg:text-xl ">
           A boutique detailing shop specializing in paint correction and ceramic coatings.
-        </p>
+        </h2>
 
         <div className="flex flex-col gap-8 sm:flex-row sm:gap-28">
           <Link href="/services" className="mintButton">

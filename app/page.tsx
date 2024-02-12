@@ -38,9 +38,9 @@ export default async function HomePage() {
   return (
     <>
       <LandingHero />
-      <h4 className="mx-auto mb-6 w-full max-w-screen-2xl px-4 text-4xl font-bold tracking-tight text-gray-800">
+      <h3 className="mx-auto mb-6 w-full max-w-screen-2xl px-4 text-4xl font-bold tracking-tight text-gray-800">
         Our Services
-      </h4>
+      </h3>
       <section className="mx-auto mb-10 grid w-full max-w-screen-2xl grid-cols-1 gap-4 px-4 pb-4 md:grid-cols-2 lg:grid-cols-3">
         {homePageServices.map((service, index) => {
           const imageUrl = service.image.asset._ref
@@ -79,9 +79,9 @@ export default async function HomePage() {
         </Link>
       </div>
 
-      <h4 className="mx-auto mb-6 w-full max-w-screen-2xl px-4 text-4xl font-bold tracking-tight text-gray-800">
+      <h3 className="mx-auto mb-6 w-full max-w-screen-2xl px-4 text-4xl font-bold tracking-tight text-gray-800">
         Online Store
-      </h4>
+      </h3>
       <ThreeItemGrid />
 
       <div className="mx-auto mb-20 flex w-full max-w-screen-2xl justify-center px-4">
@@ -90,9 +90,9 @@ export default async function HomePage() {
         </Link>
       </div>
 
-      <h4 className="mx-auto mb-6 w-full max-w-screen-2xl px-4 text-4xl font-bold tracking-tight text-gray-800 md:mb-4">
+      <h3 className="mx-auto mb-6 w-full max-w-screen-2xl px-4 text-4xl font-bold tracking-tight text-gray-800 md:mb-4">
         Contact
-      </h4>
+      </h3>
       <div className="mx-auto mb-20 flex w-full max-w-screen-2xl justify-center px-4">
         <ContactSection />
       </div>
