@@ -27,7 +27,7 @@ function ThreeItemGridItem({
             size === 'full' ? '(min-width: 768px) 66vw, 100vw' : '(min-width: 768px) 33vw, 100vw'
           }
           priority={priority}
-          alt={item.title}
+          alt=""
           label={{
             // position: size === 'full' ? 'center' : 'bottom',
             position: 'bottom',
