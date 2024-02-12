@@ -40,7 +40,7 @@ export function MenuSection({ title, subtitle, menuItems, images }: MenuSectionP
               >
                 <Image
                   src={urlFor(image).url()}
-                  alt="Menu Item"
+                  alt=""
                   width={200}
                   height={200}
                   className="h-full w-full object-cover object-center"
