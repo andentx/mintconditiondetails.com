@@ -27,7 +27,7 @@ export default function ContactSection() {
             <dd>
               <a
                 className="rounded px-1 py-1 text-gray-600 underline-offset-4 transition-colors ease-in-out hover:text-gray-900 hover:underline active:text-black group-hover:text-gray-900"
-                href="mailto:hello@grizzlyguitar.com"
+                href="mailto:hello@mintconditiondetails.com"
               >
                 hello@mintconditiondetails.com
               </a>
