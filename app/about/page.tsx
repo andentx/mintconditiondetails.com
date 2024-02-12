@@ -9,7 +9,7 @@ export default async function AboutPage() {
   return (
     <>
       <div className="mx-auto w-full max-w-screen-2xl px-4 ">
-        <h2 className="mb-6 w-full text-4xl font-bold tracking-tight text-gray-800">About</h2>
+        <h1 className="mb-6 w-full text-4xl font-bold tracking-tight text-gray-800">About</h1>
         <div className="mx-auto mb-20 flex h-[30rem] w-full flex-col  md:flex-row">
           <div className="text-md flex flex-col pb-10 md:mb-0 md:w-1/2 md:pr-10">
             <p className="mb-6 ">
