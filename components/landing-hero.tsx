@@ -8,6 +8,7 @@ export default function LandingHero() {
         <Image
           src="https://res.cloudinary.com/dsz45zrla/image/upload/v1703008119/Image_1_dtzv0k.jpg"
           alt="A car in a clean detailing workshop"
+          priority={true}
           className="h-full w-full max-w-screen-2xl rounded-md border border-gray-800 object-cover object-center"
           height="1200"
           width="1600"
