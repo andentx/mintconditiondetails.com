@@ -26,6 +26,9 @@ export default function Search() {
 
   return (
     <form onSubmit={onSubmit} className="w-max-[550px] relative w-80" aria-label="Product search">
+      <label htmlFor="search" className="sr-only">
+        Search for products
+      </label>
       <input
         key={searchParams?.get('q')}
         type="text"
