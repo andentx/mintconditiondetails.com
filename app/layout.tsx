@@ -18,6 +18,12 @@ export const metadata = {
   robots: {
     follow: true,
     index: true
+  },
+  openGraph: {
+    images: '/opengraph-image.png',
+    type: 'website',
+    siteName: 'Mint Condition Detailing',
+    locale: 'en_US'
   }
 };
 
