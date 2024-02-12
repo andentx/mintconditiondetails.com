@@ -13,7 +13,7 @@ export default function ProductGridItems({ products }: { products: Product[] }) 
             href={`/product/${product.handle}`}
           >
             <GridTileImage
-              alt={product.title}
+              alt=""
               label={{
                 title: product.title,
                 amount: product.priceRange.maxVariantPrice.amount,
