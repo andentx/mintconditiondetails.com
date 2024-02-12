@@ -32,6 +32,7 @@ export default function Search() {
       <input
         key={searchParams?.get('q')}
         type="text"
+        id="search"
         name="search"
         placeholder="Search for products..."
         autoComplete="off"
