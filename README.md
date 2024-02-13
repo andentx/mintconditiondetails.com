@@ -21,7 +21,7 @@ This is a website for [Mint Condition Detailing](https://www.mintconditiondetail
 - [Sanity](https://www.sanity.io)
 - [Shopify](https://www.shopify.com)
 - [Tailwind](https://tailwindcss.com)
-- [Vercel](https://netlify.com)
+- [Vercel](https://vercel.com)
 
 <br />
 
