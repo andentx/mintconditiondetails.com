@@ -22,7 +22,7 @@ type HomepageFeaturedService = {
 };
 
 export const metadata = {
-  description: 'High-performance ecommerce store built with Next.js, Vercel, and Shopify.',
+  description: 'A boutique detailing shop specializing in paint correction and ceramic coatings.',
   openGraph: {
     type: 'website'
   }

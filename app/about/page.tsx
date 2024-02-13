@@ -1,8 +1,7 @@
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'About',
-  description: 'About description'
+  title: 'About'
 };
 
 export default async function AboutPage() {

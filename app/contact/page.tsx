@@ -1,8 +1,7 @@
 import ContactSection from 'components/contact-section';
 
 export const metadata = {
-  title: 'Contact',
-  description: 'Contact description'
+  title: 'Contact'
 };
 
 export default async function ContactPage() {
