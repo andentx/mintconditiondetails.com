@@ -6,7 +6,7 @@ export default function LandingHero() {
     <div className="relative mx-auto mb-20 w-full max-w-screen-2xl">
       <div aria-hidden="true" className="absolute inset-0 flex justify-center overflow-hidden px-4">
         <Image
-          src="https://res.cloudinary.com/dsz45zrla/image/upload/v1703008119/Image_1_dtzv0k.jpg"
+          src="https://res.cloudinary.com/dsz45zrla/image/upload/v1707852157/updatedshop_yu4qde.png"
           alt="A car in a clean detailing workshop"
           priority={true}
           className="h-full w-full max-w-screen-2xl rounded-md border border-gray-800 object-cover object-center"
